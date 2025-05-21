@@ -82,7 +82,7 @@ new QRCode(document.getElementById("qrcode"), {
   correctLevel : QRCode.CorrectLevel.H
 });
 
-const music = new Audio("audio/ambiente-metalico.mp3");
+const music = new Audio("audio/rock.mp3");
 music.loop = true;
 let isPlaying = false;
 
