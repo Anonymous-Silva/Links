@@ -175,4 +175,16 @@ canvas#stars {
   border-color: #777;
 }
 
+#parallax-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: url('https://i.imgur.com/U6tU5Aj.png') repeat;
+  background-size: cover;
+  z-index: -1;
+  transition: transform 0.05s linear;
+}
+
 /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/games/gam-4/gam379.cur), auto !important;} /* End https://www.cursors-4u.com */
