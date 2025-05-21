@@ -159,24 +159,3 @@ canvas#stars {
   box-shadow: 0 0 10px rgba(255, 65, 108, 0.6);
 }
 
-#copyBtn {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-#copyBtn:hover {
-  background-color: #555;
-}
-
-#copyMsg {
-  margin-left: 10px;
-  color: #0f0;
-  font-weight: bold;
-}
-
