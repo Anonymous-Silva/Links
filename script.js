@@ -72,3 +72,12 @@ document.getElementById("copyBtn").addEventListener("click", function () {
     setTimeout(() => msg.style.display = "none", 2000);
   });
 });
+
+new QRCode(document.getElementById("qrcode"), {
+  text: "https://youtube.com/@passeiosdevoge?si=Bp5PfWgjP2MQIqxB",
+  width: 150,
+  height: 150,
+  colorDark : "#000000",
+  colorLight : "#ffffff",
+  correctLevel : QRCode.CorrectLevel.H
+});
