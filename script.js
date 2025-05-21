@@ -98,3 +98,12 @@ toggleBtn.addEventListener("click", () => {
   }
   isPlaying = !isPlaying;
 });
+
+document.addEventListener("mousemove", (e) => {
+  const x = e.clientX / window.innerWidth - 0.5;
+  const y = e.clientY / window.innerHeight - 0.5;
+  const layer = document.getElementById("parallax-layer");
+  const moveX = x * 30; // sensibilidade horizontal
+  const moveY = y * 30; // sensibilidade vertical
+  layer.style.transform = `translate(${moveX}px, ${moveY}px)`;
+});
