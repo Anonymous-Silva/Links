@@ -26,6 +26,18 @@ function drawStars() {
   moveStars();
 }
 
+const text = "Passeios de Voge";
+let i = 0;
+
+function typeText() {
+  if (i < text.length) {
+    document.querySelector(".typed-text").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeText, 100);
+  }
+}
+window.onload = typeText;
+
 function moveStars() {
   stars.forEach(star => {
     star.y += star.speed;
