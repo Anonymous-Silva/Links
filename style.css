@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #0f0f0f, #1c1c1c);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s;
+}
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 28px;
+  margin: 15px 0 5px;
+}
+
+.bio {
+  font-style: italic;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.yt-button {
+  display: inline-block;
+  margin-bottom: 30px;
+  background-color: #ff0000;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.yt-button:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+}
+
+.video-wrapper {
+  margin: 0 auto 30px;
+  max-width: 100%;
+  box-shadow: 0 0 10px #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.links a {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  max-width: 300px;
+  transition: 0.3s;
+  box-shadow: 0 0 5px #000;
+}
+
+.links a:hover {
+  background-color: #555;
+  transform: scale(1.03);
+}
