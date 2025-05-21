@@ -63,3 +63,12 @@ profile.addEventListener("click", () => {
 overlay.addEventListener("click", () => {
   overlay.style.display = "none";
 });
+
+document.getElementById("copyBtn").addEventListener("click", function () {
+  const link = "https://youtube.com/@passeiosdevoge?si=Bp5PfWgjP2MQIqxB";
+  navigator.clipboard.writeText(link).then(() => {
+    const msg = document.getElementById("copyMsg");
+    msg.style.display = "inline";
+    setTimeout(() => msg.style.display = "none", 2000);
+  });
+});
