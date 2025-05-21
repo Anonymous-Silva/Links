@@ -7,8 +7,26 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   color: white;
-  background: black;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow-x: hidden;
+  perspective: 1px;
+  cursor: url('https://cur.cursors-4u.net/transport/images3/tra260.gif'), auto;
+}
+
+.stars {
+  position: absolute;
+  top: 0; left: 0;
+  width: 200%;
+  height: 200%;
+  background: url('https://i.imgur.com/4NZ6uLY.png') repeat;
+  background-size: contain;
+  z-index: 0;
+  animation: moveStars 100s linear infinite;
+}
+
+@keyframes moveStars {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-500px, 500px); }
 }
 
 /* Fundo de estrelas (canvas) */
@@ -125,3 +143,19 @@ canvas#stars {
   from { opacity: 0; transform: scale(0.7); }
   to   { opacity: 1; transform: scale(1); }
 }
+
+.links a,
+.yt-button {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.links a:hover,
+.yt-button:hover {
+  color: #fff;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  box-shadow: 0 0 10px rgba(255, 65, 108, 0.6);
+}
+
