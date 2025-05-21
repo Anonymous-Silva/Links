@@ -81,3 +81,20 @@ new QRCode(document.getElementById("qrcode"), {
   colorLight : "#ffffff",
   correctLevel : QRCode.CorrectLevel.H
 });
+
+const music = new Audio("audio/ambiente-metalico.mp3");
+music.loop = true;
+let isPlaying = false;
+
+const toggleBtn = document.getElementById("toggleMusic");
+
+toggleBtn.addEventListener("click", () => {
+  if (!isPlaying) {
+    music.play();
+    toggleBtn.textContent = "🔇 Desativar música ambiente";
+  } else {
+    music.pause();
+    toggleBtn.textContent = "🔊 Ativar música ambiente";
+  }
+  isPlaying = !isPlaying;
+});
