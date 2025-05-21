@@ -81,29 +81,3 @@ new QRCode(document.getElementById("qrcode"), {
   colorLight : "#ffffff",
   correctLevel : QRCode.CorrectLevel.H
 });
-
-const music = new Audio("rock.mp3");
-music.loop = true;
-let isPlaying = false;
-
-const toggleBtn = document.getElementById("toggleMusic");
-
-toggleBtn.addEventListener("click", () => {
-  if (!isPlaying) {
-    music.play();
-    toggleBtn.textContent = "🔇 Desativar música ambiente";
-  } else {
-    music.pause();
-    toggleBtn.textContent = "🔊 Ativar música ambiente";
-  }
-  isPlaying = !isPlaying;
-});
-
-document.addEventListener("mousemove", (e) => {
-  const x = e.clientX / window.innerWidth - 0.5;
-  const y = e.clientY / window.innerHeight - 0.5;
-  const layer = document.getElementById("parallax-layer");
-  const moveX = x * 30; // sensibilidade horizontal
-  const moveY = y * 30; // sensibilidade vertical
-  layer.style.transform = `translate(${moveX}px, ${moveY}px)`;
-});
